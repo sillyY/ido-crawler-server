@@ -1,4 +1,5 @@
 "use strict";
+/// <reference path="../../typings/zhui.d.ts" />
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
@@ -17,9 +18,35 @@ class Zhui {
     }
     getStatistics() {
         return __awaiter(this, void 0, void 0, function* () {
-            let [res, err] = yield utils_1.errorCapture(this.request.fetch.bind(this.request), '/cats/lv2/statistics');
-            log_1.default.success(res);
-            log_1.default.error(err);
+            return yield this.fetch('/cats/lv2/statistics');
+        });
+    }
+    getCategories(params) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.fetch('/book/by-categories', params);
+        });
+    }
+    fetch(url, ...args) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let [res, err] = yield utils_1.errorCapture(this.request.fetch.bind(this.request), url, ...args);
+            if (err) {
+                log_1.default.error(err);
+            }
+            return res;
+        });
+    }
+    test() {
+        return __awaiter(this, void 0, void 0, function* () {
+            // this.getStatistics()
+            var b = yield this.getCategories({
+                gender: 'male',
+                type: 'hot',
+                major: '玄幻',
+                minor: '',
+                start: 0,
+                limit: 20
+            });
+            console.log(b);
         });
     }
 }

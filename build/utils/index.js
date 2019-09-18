@@ -24,11 +24,10 @@ function optionSort(opt) {
     return obj;
 }
 exports.optionSort = optionSort;
-function errorCapture(asyncFunc, params) {
+function errorCapture(asyncFunc, ...args) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
-            let res = yield asyncFunc(params);
-            console.log('res为: ', res);
+            let res = yield asyncFunc(...args);
             return [res, null];
         }
         catch (e) {

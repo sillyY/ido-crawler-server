@@ -38,7 +38,7 @@ class Request {
   
     return new Promise(async (resolve, reject) => {
       try {
-        let res: Ajax.AxiosResponse = await (this._axios as any)[type](url)
+        let res: Ajax.AxiosResponse = await (this._axios as any)[type](url, options)
         resolve(res.data)
       } catch (err) {
         reject(err)

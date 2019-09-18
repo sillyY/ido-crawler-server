@@ -13,9 +13,9 @@ export function optionSort(opt: any) {
   return obj
 }
 
-export async function errorCapture(asyncFunc: Function, ...args: any): Promise<any[]> {
+export async function errorCapture(asyncFunc: Function, ...args: any[]): Promise<any[]> {
   try {
-    let res = await asyncFunc(args)
+    let res = await asyncFunc(...args)
     return [res, null]
   } catch (e) {
     return [null, e]

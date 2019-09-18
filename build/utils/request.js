@@ -37,7 +37,7 @@ class Request {
         }
         return new Promise((resolve, reject) => __awaiter(this, void 0, void 0, function* () {
             try {
-                let res = yield this._axios[type](url);
+                let res = yield this._axios[type](url, options);
                 resolve(res.data);
             }
             catch (err) {
