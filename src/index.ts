@@ -1,5 +1,20 @@
-import Zhui from './source/zhui/index'
+import biquge from './source/biquge'
 
-var zhui = new Zhui
+// // biquge.getStatistics()
 
-zhui.test()
+// // biquge.getChapters('http://www.xbiquge.la/15/15409/')
+// // .then(res=> {
+// //     console.log(res)
+// // })
+
+// biquge.getContent('http://www.xbiquge.la/15/15409/8163818.html')
+//     .then(res => {
+//         console.log(res)
+//     })
+
+// import Database from './database/index'
+
+
+// new Database().init()
+
+biquge.init()

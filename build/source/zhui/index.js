@@ -10,8 +10,10 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const request_1 = require("../../utils/request");
-const utils_1 = require("../../utils");
 const log_1 = require("../../utils/log");
+const utils_1 = require("../../utils");
+const log = new log_1.default();
+log.withTag('Zhui-Service');
 class Zhui {
     constructor() {
         this.request = new request_1.default('http://api.zhuishushenqi.com');
@@ -20,7 +22,7 @@ class Zhui {
         return __awaiter(this, void 0, void 0, function* () {
             let [res, err] = yield utils_1.errorCapture(this.request.fetch.bind(this.request), url, ...args);
             if (err) {
-                log_1.default.error(err);
+                log.error(err);
             }
             return res;
         });
@@ -48,7 +50,7 @@ class Zhui {
     test() {
         return __awaiter(this, void 0, void 0, function* () {
             var d = yield this.getSource('53e56ee335f79bb626a496c9');
-            log_1.default.success(d);
+            log.success(d);
         });
     }
 }

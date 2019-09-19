@@ -10,24 +10,35 @@ function isObject(obj) {
 }
 exports.isObject = isObject;
 class Log {
+    constructor() {
+        this.tip = '';
+    }
+    withTag(tip) {
+        this.tip = tip;
+    }
     time() {
         return moment().format('YYYY-MM-DD HH:mm:ss');
     }
     success(msg) {
-        log(`[✔] ${chalk_1.default.whiteBright(this.time())} ${chalk_1.default.green(msg !== null && typeof msg === 'object' ? JSON.stringify(msg) : msg)}`);
+        let tip = this.tip ? ` [${this.tip}] ` : ' ';
+        log(`[✔]${tip}${chalk_1.default.whiteBright(this.time())} ${chalk_1.default.green(msg !== null && typeof msg === 'object' ? JSON.stringify(msg) : msg)}`);
     }
     error(e) {
-        log(`[✖] ${chalk_1.default.whiteBright(this.time())} ${chalk_1.default.red(e !== null && typeof e === 'object' ? JSON.stringify(e) : e)}`);
+        let tip = this.tip ? ` [${this.tip}] ` : ' ';
+        log(`[✖]${tip}${chalk_1.default.whiteBright(this.time())} ${chalk_1.default.red(e !== null && typeof e === 'object' ? JSON.stringify(e) : e)}`);
     }
     fatal(e) {
-        log(`[☠] ${chalk_1.default.whiteBright(this.time())} ${chalk_1.default.red.bold(e !== null && typeof e === 'object' ? JSON.stringify(e) : e)}`);
+        let tip = this.tip ? ` [${this.tip}] ` : ' ';
+        log(`[☠]${tip}${chalk_1.default.whiteBright(this.time())} ${chalk_1.default.red.bold(e !== null && typeof e === 'object' ? JSON.stringify(e) : e)}`);
     }
     warning(msg) {
-        log(`[⚠] ${chalk_1.default.whiteBright(this.time())} ${chalk_1.default.yellow(msg !== null && typeof msg === 'object' ? JSON.stringify(msg) : msg)}`);
+        let tip = this.tip ? ` [${this.tip}] ` : ' ';
+        log(`[⚠]${tip}${chalk_1.default.whiteBright(this.time())} ${chalk_1.default.yellow(msg !== null && typeof msg === 'object' ? JSON.stringify(msg) : msg)}`);
     }
     info(msg) {
-        log(`[ℹ] ${chalk_1.default.whiteBright(this.time())} ${chalk_1.default.blue(msg !== null && typeof msg === 'object' ? JSON.stringify(msg) : msg)}`);
+        let tip = this.tip ? ` [${this.tip}] ` : ' ';
+        log(`[ℹ]${tip}${chalk_1.default.whiteBright(this.time())} ${chalk_1.default.blue(msg !== null && typeof msg === 'object' ? JSON.stringify(msg) : msg)}`);
     }
 }
-exports.default = new Log();
+exports.default = Log;
 //# sourceMappingURL=log.js.map

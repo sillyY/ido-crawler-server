@@ -1,8 +1,12 @@
 /// <reference path="../../typings/zhui.d.ts" />
 
 import Request from '../../utils/request'
+import Log from '../../utils/log'
 import { errorCapture } from '../../utils'
-import log from '../../utils/log'
+
+const log = new Log() 
+log.withTag('Zhui-Service')
+
 interface IZhui {}
 
 class Zhui implements IZhui {
