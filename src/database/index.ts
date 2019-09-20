@@ -15,7 +15,7 @@ class Database {
     }
     connect() {
         return new Promise((resolve, reject) => {
-            const db = mongoose.connect(`mongodb://${DATABASE.root}:${DATABASE.password}@${DATABASE.server}:${DATABASE.port}/${DATABASE.db}`, { useNewUrlParser: true }, err => {
+            const db = mongoose.connect(`mongodb://${DATABASE.root}:${DATABASE.password}@${DATABASE.server}:${DATABASE.port}/${DATABASE.db}`, { useNewUrlParser: true, keepAlive: true }, err => {
                 if (err) {
                   reject(err)
                 } else {

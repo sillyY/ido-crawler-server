@@ -10,26 +10,62 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 /// <reference path="../typings/biquge.d.ts" />
 const cheerio = require("cheerio");
+const ora_1 = require("ora");
+const sleep = require("sleep");
 const request_1 = require("../utils/request");
 const log_1 = require("../utils/log");
 const utils_1 = require("../utils");
-const statistics_1 = require("../database/statistics");
+const book_1 = require("../database/book");
 const log = new log_1.default();
 log.withTag('Biquge-Service');
 const BIQUGE_URL = 'http://www.xbiquge.la';
+let stat, book;
 class Biquge {
     constructor() {
         this.majors = [];
+        this.books = [];
         this.request = new request_1.default(BIQUGE_URL);
     }
     init() {
         return __awaiter(this, void 0, void 0, function* () {
+            // stat = new Stat()
+            book = new book_1.default();
             yield this.getStatistics();
-            const stat = new statistics_1.default();
             // 获取目录
-            let promises = this.majors.map(v => stat.save({ major: v.major, totals: v.books.length }));
-            yield Promise.all(promises);
-            // 
+            // let promises = this.majors.map(v=> stat.setStat({major: v.major, totals: v.books.length}))
+            // await Promise.all(promises)
+            // 遍历书籍目录
+            let books = [];
+            for (let value of this.books) {
+                log.success(`开始爬取《${value.name}》`);
+                const spinner = ora_1.default('获取中...').start();
+                const res = yield this.getChapters(value.link);
+                let chapters = [];
+                let speed = 150, sleeptime = 1, golu = utils_1.sliceArray(res, speed);
+                for (let item of golu) {
+                    let promises = item.map(v => this.getContent(v.link)), result = yield Promise.all(promises);
+                    result.map(content => {
+                        chapters.push(Object.assign({}, item, { content }));
+                        // log.info(`内容第100个字为: ${content[100]}`)
+                    });
+                    log.warning(`开始睡眠${sleeptime}s`);
+                    yield book.setBook({
+                        name: value.name,
+                        link: value.link,
+                        major: value.major,
+                        chapters
+                    });
+                    yield sleep.sleep(sleeptime);
+                }
+                // books.push({
+                //   ...value,
+                //   ...{ chapters }
+                // })
+                spinner.succeed();
+            }
+            // log.success(books[0])
+            // let promises2 = books.map(v => book.setBook(v))
+            // await Promise.all(promises2)
         });
     }
     fetch(url, ...args) {
@@ -79,7 +115,14 @@ class Biquge {
             for (let value of arr) {
                 let major = value.major.replace(/大全列表/g, '').replace(/小说/g, '');
                 let stats = major.split('、');
-                stats.map(v => this.majors.push({ major: v, books: value.books }));
+                let i = 0, len = stats.length;
+                for (; i < len; i++) {
+                    this.majors.push({
+                        major: stats[i],
+                        totals: value.books.length
+                    });
+                    value.books.map(v => this.books.push(Object.assign({}, v, { major: stats[i] })));
+                }
             }
         });
     }

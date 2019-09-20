@@ -11,13 +11,16 @@
     "cheerio": "^1.0.0-rc.3",
     "moment": "^2.24.0",
     "mongoose": "^5.7.1",
-    "qs": "^6.8.0"
+    "ora": "^3.4.0",
+    "qs": "^6.8.0",
+    "sleep": "^6.1.0"
   },
   "devDependencies": {
     "@types/moment": "^2.13.0",
     "@types/mongoose": "^5.5.17",
     "@types/qs": "^6.5.3",
-    "@types/request-promise": "^4.1.44"
+    "@types/request-promise": "^4.1.44",
+    "@types/sleep": "0.0.7"
   },
   "scripts": {
     "ts": "tsc -p tsconfig.json",
