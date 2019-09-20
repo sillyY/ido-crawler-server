@@ -15,14 +15,24 @@ class Stat extends index_1.default {
         this.initDatabase();
     }
     save(data) {
-        const Statistics = mongoose.model("statistics", statisticsSchema);
-        let u = new Statistics(data);
-        u.save(function (err) {
-            if (err) {
-                log.error(err);
-            }
-            log.success('保存成功');
+        const Statistics = mongoose.model('statistics', statisticsSchema);
+        Statistics.find({}, function (mst, msg) {
+            var room = new Statistics(data);
+            room.save();
         });
+        // Statistics.findOneAndUpdate(
+        //   {
+        //     major: data.major
+        //   },
+        //   data,
+        //   function(err, docs) {
+        //     if (err) {
+        //       log.error(err)
+        //     }
+        //     log.info(docs)
+        //     log.success(`<${data.major}>保存成功`)
+        //   }
+        // )
     }
 }
 exports.default = Stat;

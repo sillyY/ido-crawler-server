@@ -21,13 +21,11 @@ class Biquge {
     await this.getStatistics()
     const stat = new Stat()
 
-    let arr = []
-    for (let value of this.majors) {
-      stat.save({
-        major: value.major,
-        totals: value.books.length
-      })
-    }
+    // 获取目录
+    let promises = this.majors.map(v=> stat.save({major: v.major, totals: v.books.length}))
+    await Promise.all(promises)
+
+    // 
   }
   async fetch(url, ...args: any[]) {
     let [res, err] = await errorCapture(

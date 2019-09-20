@@ -26,13 +26,10 @@ class Biquge {
         return __awaiter(this, void 0, void 0, function* () {
             yield this.getStatistics();
             const stat = new statistics_1.default();
-            let arr = [];
-            for (let value of this.majors) {
-                stat.save({
-                    major: value.major,
-                    totals: value.books.length
-                });
-            }
+            // 获取目录
+            let promises = this.majors.map(v => stat.save({ major: v.major, totals: v.books.length }));
+            yield Promise.all(promises);
+            // 
         });
     }
     fetch(url, ...args) {
