@@ -6,7 +6,7 @@ import * as sleep from 'sleep'
 import Request from '../utils/request'
 import Log from '../utils/log'
 import { errorCapture, sliceArray } from '../utils'
-import Stat from '../database/statistics'
+import Major from '../database/major'
 import Book from '../database/book'
 
 const log = new Log()
@@ -14,7 +14,6 @@ log.withTag('Biquge-Service')
 
 const BIQUGE_URL = 'http://www.xbiquge.la'
 
-let stat, book
 
 class Biquge {
   request: Request
@@ -24,54 +23,8 @@ class Biquge {
     this.request = new Request(BIQUGE_URL)
   }
   async init() {
-    // stat = new Stat()
-    // book = new Book()
-    await this.getStatistics()
-
-    // 获取目录
-    // let promises = this.majors.map(v=> stat.setStat({major: v.major, totals: v.books.length}))
-    // await Promise.all(promises)
-
-    // 遍历书籍目录
-
-    let books = []
-    for (let value of this.books) {
-      log.success(`开始爬取《${value.name}》`)
-      const spinner = ora('获取中...').start()
-      const res = await this.getChapters(value.link)
-
-      console.log(res)
-
-      // let chapters = []
-      // let speed = 150,
-      //   sleeptime = 1,
-      //   golu = sliceArray(res, speed)
-
-      // for (let item of golu) {
-      //   let promises = item.map(v => this.getContent(v.link)),
-      //     result = await Promise.all(promises)
-      //   result.map(content => {
-      //     chapters.push({
-      //       ...item,
-      //       content
-      //     })
-      //     // log.info(`内容第100个字为: ${content[100]}`)
-      //   })
-      //   log.warning(`开始睡眠${sleeptime}s`)
-      //   await book.setBook({
-      //     name: value.name,
-      //     link: value.link,
-      //     major: value.major,
-      //     chapters
-      //   })
-      //   await sleep.sleep(sleeptime)
-      // }
-      // books.push({
-      //   ...value,
-      //   ...{ chapters }
-      // })
-      spinner.succeed()
-    }
+    var major = new Major()
+    major.setMajor()
   }
   async fetch(url, ...args: any[]) {
     let [res, err] = await errorCapture(
@@ -84,6 +37,7 @@ class Biquge {
     }
     return res
   }
+  
   async getStatistics() {
     const res = await this.fetch('/xiaoshuodaquan/')
 

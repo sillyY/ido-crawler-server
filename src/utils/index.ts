@@ -13,7 +13,10 @@ export function optionSort(opt: any) {
   return obj
 }
 
-export async function errorCapture(asyncFunc: Function, ...args: any[]): Promise<any[]> {
+export async function errorCapture(
+  asyncFunc: Function,
+  ...args: any[]
+): Promise<any[]> {
   try {
     let res = await asyncFunc(...args)
     return [res, null]
@@ -23,11 +26,11 @@ export async function errorCapture(asyncFunc: Function, ...args: any[]): Promise
 }
 
 export function sliceArray(array, size) {
-  var result = [];
+  var result = []
   for (var x = 0; x < Math.ceil(array.length / size); x++) {
-      var start = x * size;
-      var end = start + size;
-      result.push(array.slice(start, end));
+    var start = x * size
+    var end = start + size
+    result.push(array.slice(start, end))
   }
-  return result;
-}   
+  return result
+}
