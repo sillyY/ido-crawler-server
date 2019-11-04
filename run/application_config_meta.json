@@ -1,0 +1,307 @@
+{
+  "keys": "/Users/sillyy/Desktop/ido-crawler-server/config/config.default.ts",
+  "middleware": "/Users/sillyy/Desktop/ido-crawler-server/config/config.default.ts",
+  "security": {
+    "csrf": {
+      "enable": "/Users/sillyy/Desktop/ido-crawler-server/config/config.default.ts",
+      "type": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "useSession": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "headerName": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "queryName": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    },
+    "domainWhiteList": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "value": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "policy": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "sourceUrl": "/Users/sillyy/Desktop/ido-crawler-server/config/config.default.ts",
+  "session": {
+    "maxAge": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-watcher/config/config.default.js",
+      "development": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-schedule/config/config.default.js",
+      "file": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "files": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-static/config/config.default.js",
+    "dir": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-static/config/config.default.js",
+    "preload": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-static/config/config.default.js",
+    "buffer": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-view/config/config.default.js",
+    "cache": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-view/config/config.default.js",
+    "mapping": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-view/config/config.default.js"
+  },
+  "validate": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-validate/config/config.default.js",
+  "env": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "name": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "proxy": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "version": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "description": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "private": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "egg": {
+      "typescript": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "declarations": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "start": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "stop": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "dev": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "debug": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "test-local": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "test": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "cov": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "tsc": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "ci": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "autod": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "lint": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "clean": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "axios": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "cheerio": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "egg": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "@types/axios": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "@types/cheerio": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "@types/mocha": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "@types/node": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "@types/supertest": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "autod": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "autod-egg": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "egg-bin": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "egg-ci": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "egg-mock": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "tslib": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "tslint": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "tslint-config-egg": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "typescript": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    },
+    "ci": {
+      "version": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    },
+    "repository": {
+      "type": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "url": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    },
+    "eslintIgnore": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "author": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "license": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+  },
+  "baseDir": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "HOME": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "rundir": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "notFound": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "sitefile": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "middlewares": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "httpClient": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "formLimit": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "textLimit": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "strict": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "depth": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "encoding": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "env": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "level": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "outputJSON": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "buffer": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "appLogName": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "coreLogName": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "agentLogName": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "errorLogName": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "maxSockets": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "logging": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "port": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "hostname": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/config.default.js"
+}
