@@ -3,7 +3,7 @@
  * 链接：https://www.biquge.com.cn
  *
  */
-/// <reference path="../../typings/app/core/c1.d.ts" />
+/// <reference path="../types/c1.d.ts" />
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import Crawler from './index'

@@ -87,26 +87,26 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-onerror/lib/onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
       "dirs": [
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-session/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-jsonp/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-onerror/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-i18n/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-watcher/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-schedule/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-development/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-logrotator/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-static/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-view/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-validate/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/locales",
-        "/Users/sillyy/Desktop/ido-crawler-server/config/locales"
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-session/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-security/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-jsonp/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-onerror/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-i18n/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-watcher/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-schedule/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-multipart/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-development/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-logrotator/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-static/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-view/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-validate/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/config/locales"
       ],
       "queryField": "locale",
       "cookieField": "locale",
@@ -117,8 +117,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-watcher/lib/event-sources/default",
-        "development": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-watcher/lib/event-sources/development"
+        "default": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-watcher/lib/event-sources/default",
+        "development": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-watcher/lib/event-sources/development"
       }
     },
     "customLogger": {
@@ -164,14 +164,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/sillyy/Desktop/ido-crawler-server/app/public",
+      "dir": "/Users/sillyy/学习/Repo/ido-crawler-server/app/public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/sillyy/Desktop/ido-crawler-server/app/view",
+      "root": "/Users/sillyy/学习/Repo/ido-crawler-server/app/view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -248,9 +248,9 @@
       "author": "",
       "license": "MIT"
     },
-    "baseDir": "/Users/sillyy/Desktop/ido-crawler-server",
+    "baseDir": "/Users/sillyy/学习/Repo/ido-crawler-server",
     "HOME": "/Users/sillyy",
-    "rundir": "/Users/sillyy/Desktop/ido-crawler-server/run",
+    "rundir": "/Users/sillyy/学习/Repo/ido-crawler-server/run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -282,7 +282,7 @@
       "returnRawBody": true
     },
     "logger": {
-      "dir": "/Users/sillyy/Desktop/ido-crawler-server/logs/ido-crawler-server",
+      "dir": "/Users/sillyy/学习/Repo/ido-crawler-server/logs/ido-crawler-server",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -376,8 +376,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-session",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-session",
       "version": "3.1.0"
     },
     "security": {
@@ -389,8 +389,8 @@
         "session"
       ],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-security",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-security",
       "version": "2.6.1"
     },
     "jsonp": {
@@ -402,8 +402,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-jsonp",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -415,8 +415,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-onerror",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -426,8 +426,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-i18n",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -437,8 +437,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-watcher",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-watcher",
       "version": "3.1.0"
     },
     "schedule": {
@@ -448,8 +448,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-schedule",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -461,8 +461,8 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-multipart",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-multipart",
       "version": "2.9.0"
     },
     "development": {
@@ -476,8 +476,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-development",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -489,8 +489,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-logrotator",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -500,8 +500,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-static",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -511,8 +511,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg/config/plugin.js",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-view",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/plugin.js",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-view",
       "version": "2.1.2"
     },
     "validate": {
@@ -522,8 +522,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/sillyy/Desktop/ido-crawler-server/config/plugin.ts",
-      "path": "/Users/sillyy/Desktop/ido-crawler-server/node_modules/egg-validate",
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/config/plugin.ts",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-validate",
       "version": "2.0.2"
     }
   }
