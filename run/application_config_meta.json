@@ -14,7 +14,7 @@
       "queryName": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-security/config/config.default.js",
       "refererWhiteList": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-security/config/config.default.js"
     },
-    "domainWhiteList": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-security/config/config.default.js",
+    "domainWhiteList": "/Users/sillyy/学习/Repo/ido-crawler-server/config/config.default.ts",
     "protocolWhiteList": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-security/config/config.default.js",
     "defaultMiddleware": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-security/config/config.default.js",
     "xframe": {
@@ -54,6 +54,10 @@
       "ipBlackList": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-security/config/config.default.js",
       "checkAddress": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-security/config/config.default.js"
     }
+  },
+  "cors": {
+    "origin": "/Users/sillyy/学习/Repo/ido-crawler-server/config/config.default.ts",
+    "allowMethods": "/Users/sillyy/学习/Repo/ido-crawler-server/config/config.default.ts"
   },
   "sourceUrl": "/Users/sillyy/学习/Repo/ido-crawler-server/config/config.default.ts",
   "session": {
@@ -181,6 +185,7 @@
       "axios": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/config.default.js",
       "cheerio": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/config.default.js",
       "egg": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/config.default.js",
+      "egg-cors": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/config.default.js",
       "egg-validate": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/config.default.js"
     },

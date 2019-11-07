@@ -40,23 +40,24 @@ class C1 extends Crawler {
       .find('.result-game-item-desc')
       .text()
 
+    let list: any = []
     this.each(
       $(element).find(
         '.result-game-item-detail>.result-game-item-info .result-game-item-info-tag'
       ),
       ele => {
-        let arr = $(ele)
-          .find('.result-game-item-info-tag>span:last-child')
-          .text()
+        let node = $(ele).find('.result-game-item-info-tag > span:last-child')
         result.latestChapter = $(ele)
           .find('.result-game-item-info-tag-item')
           .text()
           .replace(/(^\s*)|(\s*$)/g, '')
-        result.author = this.formatProp(arr[0])
-        result.major = this.formatProp(arr[1])
-        result.update = this.formatProp(arr[2])
+
+        list.push($(node).text())
       }
     )
+    result.author = this.formatProp(list[0])
+    result.major = this.formatProp(list[1])
+    result.update = this.formatProp(list[2])
     return result
   }
 

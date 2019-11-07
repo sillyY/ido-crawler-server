@@ -13,7 +13,9 @@
       "genid": "<Function v4>"
     },
     "security": {
-      "domainWhiteList": [],
+      "domainWhiteList": [
+        "*"
+      ],
       "protocolWhiteList": [],
       "defaultMiddleware": "csrf,hsts,methodnoallow,noopen,nosniff,csp,xssProtection,xframe,dta",
       "csrf": {
@@ -105,6 +107,7 @@
         "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-static/config/locales",
         "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-view/config/locales",
         "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-validate/config/locales",
+        "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-cors/config/locales",
         "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg/config/locales",
         "/Users/sillyy/学习/Repo/ido-crawler-server/config/locales"
       ],
@@ -178,6 +181,10 @@
       "mapping": {}
     },
     "validate": {},
+    "cors": {
+      "origin": "*",
+      "allowMethods": "GET,HEAD,PUT,POST,DELETE,PATCH"
+    },
     "env": "local",
     "name": "ido-crawler-server",
     "keys": "<String len: 37>",
@@ -213,6 +220,7 @@
         "axios": "^0.19.0",
         "cheerio": "^1.0.0-rc.3",
         "egg": "^2.6.1",
+        "egg-cors": "^2.2.2",
         "egg-scripts": "^2.6.0",
         "egg-validate": "^2.0.2"
       },
@@ -325,6 +333,7 @@
       "logging": false
     },
     "coreMiddleware": [
+      "cors",
       "meta",
       "siteFile",
       "notfound",
@@ -525,6 +534,17 @@
       "from": "/Users/sillyy/学习/Repo/ido-crawler-server/config/plugin.ts",
       "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-validate",
       "version": "2.0.2"
+    },
+    "cors": {
+      "enable": true,
+      "package": "egg-cors",
+      "name": "cors",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/sillyy/学习/Repo/ido-crawler-server/config/plugin.ts",
+      "path": "/Users/sillyy/学习/Repo/ido-crawler-server/node_modules/egg-cors",
+      "version": "2.2.2"
     }
   }
 }
